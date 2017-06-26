@@ -1,0 +1,14 @@
+{
+  "name": "adyenTest",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "~4.0.0-alpha.6",
+    "modernizr": "~2.8.1",
+    "components-font-awesome": "^4.7.0"
+  },
+  "devDependencies": {
+    "chai": "^4.0.2",
+    "mocha": "^3.4.2",
+    "jquery": "^3.2.1"
+  }
+}

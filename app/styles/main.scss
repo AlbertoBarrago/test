@@ -1,0 +1,152 @@
+// bower:scss
+@import "bower_components/bootstrap/scss/bootstrap.scss";
+// endbower
+
+$mainColor: #5cb85c;
+
+body {
+  border-top: 2px solid $mainColor;
+}
+
+header {
+  background-color: black;
+  color: white;
+
+  padding: .7em;
+
+  #filter {
+    float: right;
+  }
+
+  .containerVenues {
+    font-size: .7em;
+  }
+
+  button {
+    &:hover{
+      cursor:pointer;
+    }
+  }
+
+  h6 {
+    font-size: .8em;
+  }
+
+  #resultTemplate {
+    font-size: .8em;
+    color: $mainColor;
+
+    input {
+      top: .15em;
+      position: relative;
+    }
+  }
+
+  #radius {
+    font-size: .8em;
+    color: $mainColor;
+
+    input {
+      top: .15em;
+      position: relative;
+    }
+  }
+
+  #outputRadius, #outputLimit {
+    color: $mainColor;
+  }
+
+}
+
+.panelInfo {
+  p {
+    text-align: center;
+    margin-bottom:0;
+    position:relative;
+    top:.2em;
+  }
+
+  i {
+    color:$mainColor;
+  }
+
+  /* Small Devices, Tablets */
+  @media only screen and (max-width: 768px) {
+   p {
+     font-size: .7em;
+   }
+  }
+}
+
+footer {
+  p:nth-child(1) {
+    text-align: center;
+    font-size: .7em;
+  }
+}
+
+#venues {
+  margin-top: 1em;
+
+  .venue-card {
+    height: 3em;
+    padding: .4em;
+    margin-bottom: 6em;
+    padding-bottom: .3em;
+
+    img {
+      display: block;
+      margin: 0 auto;
+      border: 1px solid $mainColor;
+
+      box-shadow: 0 0 .3px .2px lightslategray;
+    }
+
+    .responsiveSize{
+      @media only screen and (max-width: 768px) {
+        font-size: 1em;
+      }
+    }
+    @media only screen and (max-width: 768px) {
+      margin-bottom: 4.7em;
+    }
+  }
+
+  .chevron {
+    a {color:$mainColor;}
+    position: relative;
+    top:2em;
+  }
+
+  .customHr {
+    position: relative;
+    margin: 2% auto;
+    width: 90%;
+  }
+
+  .mainColor {
+    color: $mainColor;
+  }
+
+  /* Small Devices, Tablets */
+  @media only screen and (max-width: 768px) {
+    .venue-card {
+      p {
+        font-size: .8em;
+      }
+    }
+  }
+}
+
+#preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  background: #333 url('http://files.mimoymima.com/images/loading.gif') no-repeat center center;
+}
+
+

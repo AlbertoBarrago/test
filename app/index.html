@@ -1,0 +1,96 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>HereItz</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="/bower_components/components-font-awesome/css/font-awesome.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+
+  </head>
+  <body>
+    <!--[if IE]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div id="preloader"></div>
+
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="row">
+                        <div class="col">
+                            <h6><i class="fa fa-map-pin" aria-hidden="true"></i> Set Radius <span id="outputRadius"></span> mts</h6>
+                            <div id="radius"></div>
+                        </div>
+                        <div class="col">
+                            <h6><i class="fa fa-list" aria-hidden="true"></i> Set Results <span id="outputLimit"></span></h6>
+                            <div id="resultTemplate"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col hidden-sm-down">
+                    <div id="filter"></div>
+                </div>
+                <div class="col hidden-md-down">
+                    <div id="changePlace"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="container panelInfo">
+        <div class="row">
+            <div class="col">
+                <p><i class="fa fa-map-marker" aria-hidden="true"></i> <span id="placeSetted"></span> &#124;
+                    <i class="fa fa-list" aria-hidden="true"></i> <span id="totalVenues"></span> &#124;
+                    <i class="fa fa-user-circle" aria-hidden="true"></i>
+                    <span id="userIn"></span>
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="container">
+        <div id="venues"><ul></ul></div>
+    </section>
+    <footer></footer>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/tether/dist/js/tether.js"></script>
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js scripts/plugins.js -->
+    <script src="/bower_components/bootstrap/js/dist/util.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>
